@@ -4,4 +4,4 @@
 
 Challenges | Links
 ---------- | ----------
-Code Challenge |  [Array-Reverse](challenges-401/code-challenge-01.png)
+Code Challenge |  [Array-Reverse](challenges-401/Array-Reverse/Read1.md
