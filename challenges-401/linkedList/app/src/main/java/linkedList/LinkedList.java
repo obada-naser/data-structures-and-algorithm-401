@@ -23,8 +23,8 @@ public class LinkedList<T> {
     }
 
     public boolean includes(T num){
-        Node currentNode=new Node<>(num);
-        currentNode=head;
+        Node currentNode=head;
+
         while(currentNode !=null){
             if(currentNode.value.equals(num))
                 return true;
