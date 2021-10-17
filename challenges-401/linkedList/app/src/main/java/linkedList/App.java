@@ -18,7 +18,16 @@ public class App {
         list.insert(7);
         list.insert(9);
         list.insert(10);
-        System.out.println(list.Stringing());
+
+        System.out.println(list.toString());
         System.out.println(list.includes(5));
+        list.appendValue(3);
+        System.out.println(list.toString());
+        list.insertBefore(7,5);
+        System.out.println(list.toString());
+        list.insertAfter(8,1);
+        System.out.println(list.toString());
+
+
     }
 }

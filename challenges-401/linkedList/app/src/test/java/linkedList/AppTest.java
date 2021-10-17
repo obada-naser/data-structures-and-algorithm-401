@@ -20,7 +20,7 @@ class AppTest {
         list.insert(7);
         list.insert(9);
         list.insert(10);
-        assertEquals("{10}=>{9}=>{7}=>{8}=>{4}=>NULL!",list.Stringing(),"it should return these numbers {10}=>{9}=>{7}=>{8}=>{4}=>NULL! ");
+        assertEquals("{10}=>{9}=>{7}=>{8}=>{4}=>NULL!",list.toString(),"it should return these numbers {10}=>{9}=>{7}=>{8}=>{4}=>NULL! ");
 
     }
     @Test void includesTest(){
@@ -29,4 +29,60 @@ class AppTest {
 
         assertTrue(list.includes(5),"it should return the new number");
     }
+
+
+
+    @Test void appendValueTest(){
+        LinkedList<Integer> list=new LinkedList<>();
+        list.insert(4);
+        list.insert(8);
+        list.insert(7);
+        list.insert(9);
+        list.insert(10);
+        list.appendValue(3);
+        assertEquals("{10}=>{9}=>{7}=>{8}=>{4}=>{3}=>NULL!",list.toString());
+
+    }
+
+    @Test void insertBeforeTest(){
+        LinkedList<Integer> list=new LinkedList<>();
+        list.insert(4);
+        list.insert(8);
+        list.insert(7);
+        list.insert(9);
+        list.insert(10);
+        list.appendValue(3);
+        list.insertBefore(7,5);
+        assertEquals("{10}=>{9}=>{5}=>{7}=>{8}=>{4}=>{3}=>NULL!",list.toString());
+
+    }
+    @Test void insertAfterTest(){
+        LinkedList<Integer> list=new LinkedList<>();
+        list.insert(4);
+        list.insert(8);
+        list.insert(7);
+        list.insert(9);
+        list.insert(10);
+        list.appendValue(3);
+        list.insertBefore(7,5);
+        list.insertAfter(8,1);
+        assertEquals("{10}=>{9}=>{5}=>{7}=>{8}=>{1}=>{4}=>{3}=>NULL!",list.toString());
+
+    }
+
+    @Test void toStringTest(){
+        LinkedList<Integer> list=new LinkedList<>();
+        list.insert(4);
+        list.insert(8);
+        list.insert(7);
+        list.insert(9);
+        list.insert(10);
+        list.appendValue(3);
+        list.insertBefore(7,5);
+        list.insertAfter(8,1);
+        assertEquals("{10}=>{9}=>{5}=>{7}=>{8}=>{1}=>{4}=>{3}=>NULL!",list.toString());
+
+    }
+
+
 }

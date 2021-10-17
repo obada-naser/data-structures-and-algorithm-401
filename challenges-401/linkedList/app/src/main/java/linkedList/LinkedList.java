@@ -21,6 +21,54 @@ public class LinkedList<T> {
 
 
     }
+    public void appendValue(T num){
+
+
+        Node<T> newNode=new Node<>(num);
+
+        Node currentNode=head;
+
+        while(currentNode.next!=null){
+
+                currentNode = currentNode.next;
+
+        }
+        currentNode.next=newNode;
+
+    }
+
+    public void insertBefore(T num,T newNum){
+
+        Node currentNode=head;
+        while(currentNode.next!=null){
+            if(currentNode.next.value==num){
+                Node<T> newNode=new Node<>(newNum);
+                newNode.next=currentNode.next;
+                currentNode.next=newNode;
+
+                break;
+            }
+
+                currentNode = currentNode.next;
+
+        }
+
+    }
+
+    public void insertAfter(T num,T newNum){
+        Node currentNode=head;
+
+        while(currentNode.next!=null){
+            if(currentNode.value==num){
+                Node<T> newNode=new Node<>(newNum);
+                newNode.next=currentNode.next;
+                currentNode.next=newNode;
+                break;
+
+            }
+            currentNode = currentNode.next;
+        }
+    }
 
     public boolean includes(T num){
         Node currentNode=head;
@@ -35,8 +83,8 @@ public class LinkedList<T> {
         return false;
     }
 
-
-    public String Stringing(){
+    @Override
+    public String toString(){
         Node currentNode=head;
         String allData="";
 
@@ -48,6 +96,8 @@ public class LinkedList<T> {
         allData=allData+"NULL!";
         return allData;
     }
+
+
 
 
 
