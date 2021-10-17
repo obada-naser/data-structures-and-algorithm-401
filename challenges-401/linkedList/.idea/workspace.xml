@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52cfd89f-dc89-4421-b2d8-d9ffefd08df0" name="Changes" comment="" />
+    <list default="true" id="52cfd89f-dc89-4421-b2d8-d9ffefd08df0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedList.App" />
       <module name="linkedList.app.main" />
@@ -50,12 +55,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.appendValueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.appendValueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -71,12 +76,54 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.includesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.insertAfterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.includesTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.insertAfterTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.insertBeforeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.insertBeforeTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.toStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.toStringTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -94,9 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Gradle.AppTest.includesTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.AppTest.toStringTest" />
+        <item itemvalue="Gradle.AppTest.insertAfterTest" />
+        <item itemvalue="Gradle.AppTest.insertBeforeTest" />
+        <item itemvalue="Gradle.AppTest.appendValueTest" />
       </list>
     </recent_temporary>
   </component>
