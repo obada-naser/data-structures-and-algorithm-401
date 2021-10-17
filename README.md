@@ -9,4 +9,6 @@ Code Challenge-2 |  [array-insert-shift](challenges-401/Array-insert-shift/Read2
 Code Challenge-3 |  [array-binary-search](challenges-401/array-binary-search/Read3.md) | [array-binary-search-code](challenges-401/array-binary-search/code-challenge-03.png)
 Code Challenge-4 |  [Mock-Interviews](challenges-401/MockInterviews/Read4.md) |[Mock-Interviews-code](challenges-401/MockInterviews/code-challenge-4-white.png)
 Code Challenge-5 |  [Linked-List](allReads/Read5.md) | [Linked-List-code](challenges-401/linkedList/app/src/main/java/linkedList/LinkedList.java)
+Code Challenge-6 |  [linked-list-insertions](allReads/Read6.md) | [linked-list-insertions-code](challenges-401/linkedList/app/src/main/java/linkedList/LinkedList.java)
+
 
