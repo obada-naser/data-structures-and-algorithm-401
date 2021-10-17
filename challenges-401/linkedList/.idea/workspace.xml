@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52cfd89f-dc89-4421-b2d8-d9ffefd08df0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
