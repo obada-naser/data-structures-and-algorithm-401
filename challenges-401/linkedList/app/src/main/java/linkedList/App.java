@@ -18,6 +18,10 @@ public class App {
         list.insert(7);
         list.insert(9);
         list.insert(10);
+        list.insert(13);
+
+
+
 
         System.out.println(list.toString());
         System.out.println(list.includes(5));
@@ -25,8 +29,35 @@ public class App {
         System.out.println(list.toString());
         list.insertBefore(7,5);
         System.out.println(list.toString());
-        list.insertAfter(8,1);
+        list.insertAfter(8,2);
+
+
+
+
         System.out.println(list.toString());
+        list.kthFromEnd(5);
+
+        LinkedList<Integer> list1=new LinkedList<>();
+        LinkedList<Integer> list2=new LinkedList<>();
+        LinkedList<Integer> list3=new LinkedList<>();
+
+
+        list1.insert(1);
+        list1.insert(3);
+        list1.insert(5);
+        list1.insert(7);
+        list1.insert(9);
+        list1.insert(11);
+
+        list2.insert(0);
+        list2.insert(2);
+        list2.insert(4);
+        list2.insert(6);
+        list2.insert(8);
+        list2.insert(10);
+
+        list3.zipLists(list1,list2);
+
 
 
     }

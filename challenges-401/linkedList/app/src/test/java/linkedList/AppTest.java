@@ -84,5 +84,47 @@ class AppTest {
 
     }
 
+    @Test void kthFromEndTest(){
+        LinkedList<Integer> list=new LinkedList<>();
+        list.insert(4);
+        list.insert(8);
+        list.insert(7);
+        list.insert(9);
+        list.insert(10);
+        list.appendValue(3);
+        list.insertBefore(7,5);
+        list.insertAfter(8,1);
+        list.kthFromEnd(5);
+
+        assertNotNull("7 is the 5th value before the head","It should return this: 7 is the 5th value before the head ");
+        assertNull("Exception","It should return this: Exception");
+
+    }
+    @Test void zipListsTest(){
+        LinkedList<Integer> list1=new LinkedList<>();
+        LinkedList<Integer> list2=new LinkedList<>();
+        LinkedList<Integer> list3=new LinkedList<>();
+
+
+        list1.insert(1);
+        list1.insert(3);
+        list1.insert(5);
+        list1.insert(7);
+        list1.insert(9);
+        list1.insert(11);
+
+        list2.insert(0);
+        list2.insert(2);
+        list2.insert(4);
+        list2.insert(6);
+        list2.insert(8);
+        list2.insert(10);
+
+        list3.zipLists(list1,list2);
+
+        assertNotNull("{0}=>{1}=>{2}=>{3}=>{4}=>{5}=>{6}=>{7}=>{8}=>{9}=>{10}=>{11}=>NULL!","It should return this:{0}=>{1}=>{2}=>{3}=>{4}=>{5}=>{6}=>{7}=>{8}=>{9}=>{10}=>{11}=>NULL!" );
+
+    }
+
 
 }
