@@ -9,8 +9,10 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
 
+
+        System.out.println(new App().getGreeting());
+        System.out.println("***** Linked-List *******");
         LinkedList<Integer> list=new LinkedList<>();
 
         list.insert(4);
@@ -35,7 +37,16 @@ public class App {
 
 
         System.out.println(list.toString());
+        System.out.println("****** kth");
+        list.kthFromEnd(4);
         list.kthFromEnd(5);
+
+        System.out.println("**** kth");
+
+        list.reverse();
+        System.out.println("\n ****");
+
+
 
         LinkedList<Integer> list1=new LinkedList<>();
         LinkedList<Integer> list2=new LinkedList<>();
@@ -56,8 +67,67 @@ public class App {
         list2.insert(8);
         list2.insert(10);
 
-        list3.zipLists(list1,list2);
+        System.out.println("********** zip");
+        System.out.println( list3.zipLists(list1,list2));
 
+// *********************   STACK    ****************************
+
+        System.out.println("***** Stack *******");
+
+        Stack<Integer> stack=new Stack<>();
+
+        stack.push(2);
+        stack.push(6);
+        stack.push(4);
+        stack.push(7);
+        System.out.println(stack.toString());
+
+        System.out.println("****** pop");
+        stack.pop();
+        System.out.println("****");
+
+        System.out.println(stack.toString());
+        System.out.println("*****");
+        System.out.println(stack.peek());
+        System.out.println("*****");
+        System.out.println(stack.isEmpty());
+
+// *********************   Queue    ****************************
+        System.out.println("******* Queue *******");
+
+
+        Queue<Integer> queue=new Queue<>();
+        queue.Enqueue(3);
+        queue.Enqueue(6);
+        queue.Enqueue(8);
+        queue.Enqueue(15);
+
+        System.out.println(queue.toString());
+        queue.Dequeue();
+        queue.Dequeue();
+        System.out.println(queue.toString());
+        queue.Enqueue(6);
+        System.out.println(queue.toString());
+        System.out.println(queue.peek());
+
+
+
+
+
+
+
+
+//        LinkedList list5 = new LinkedList();
+//        list5.head = new Node(85);
+//        list5.head.next = new Node(15);
+//        list5.head.next.next = new Node(4);
+//        list5.head.next.next.next = new Node(20);
+//        System.out.println("Given Linked list");
+//        list5.printList(head);
+//        head = list5.reverse(head);
+//        System.out.println("");
+//        System.out.println("Reversed linked list ");
+//        list5.printList(head);
 
 
     }

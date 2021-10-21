@@ -81,7 +81,7 @@ public class LinkedList<T> {
 
 
 
-    public void kthFromEnd(int num){
+    public Node kthFromEnd(int num){
         Node currentNode=head;
         int length=0;
 
@@ -105,11 +105,11 @@ public class LinkedList<T> {
 
             System.out.println(currentNode.value + " is the " + num + "th value before the head");
         }
-
+    return currentNode;
 
     }
 
-    public void zipLists(LinkedList list1,LinkedList list2){
+    public LinkedList zipLists(LinkedList list1,LinkedList list2){
         Node currentNode1=list1.head;
         Node currentNode2=list2.head;
         LinkedList newList=new LinkedList();
@@ -133,9 +133,10 @@ public class LinkedList<T> {
 
         }
 
-        System.out.println(newList);
-
-        System.out.println(list1+" "+list2);
+//        System.out.println(newList);
+//
+//        System.out.println(list1+" "+list2);
+        return newList;
 
 
 
@@ -155,6 +156,36 @@ public class LinkedList<T> {
         }
         return false;
     }
+
+    public void reverse()
+    {
+
+        Node prev = null;
+        Node currentNode = head;
+        Node nextNode =null ;
+        System.out.print("NULL!");
+        while (currentNode != null) {
+            nextNode = currentNode.next;
+            currentNode.next = prev;
+            prev = currentNode;
+            currentNode = nextNode;
+        }
+        head = prev;
+        while (head != null) {
+            System.out.print("=>"+"{"+head.value+"}");
+            head = head.next;
+        }
+
+
+    }
+
+//    void printList(Node node)
+//    {
+//        while (node != null) {
+//            System.out.print(node.value + " ");
+//            node = node.next;
+//        }
+//    }
 
 
 

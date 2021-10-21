@@ -96,8 +96,9 @@ class AppTest {
         list.insertAfter(8,1);
         list.kthFromEnd(5);
 
+
         assertNotNull("7 is the 5th value before the head","It should return this: 7 is the 5th value before the head ");
-        assertNull("Exception","It should return this: Exception");
+
 
     }
     @Test void zipListsTest(){
@@ -125,6 +126,108 @@ class AppTest {
         assertNotNull("{0}=>{1}=>{2}=>{3}=>{4}=>{5}=>{6}=>{7}=>{8}=>{9}=>{10}=>{11}=>NULL!","It should return this:{0}=>{1}=>{2}=>{3}=>{4}=>{5}=>{6}=>{7}=>{8}=>{9}=>{10}=>{11}=>NULL!" );
 
     }
+    // stack tests:
+
+    @Test void pushTest(){
+        Stack<Integer> stack=new Stack<>();
+
+        stack.push(2);
+        stack.push(6);
+        stack.push(4);
+        stack.push(7);
+
+        assertEquals("{7}=>{4}=>{6}=>{2}=>NULL!",stack.toString(),"it should show this:{7}=>{4}=>{6}=>{2}=>NULL!");
+    }
+    @Test void popTest(){
+        Stack<Integer> stack=new Stack<>();
+
+        stack.push(2);
+        stack.push(6);
+        stack.push(4);
+        stack.push(7);
+        stack.pop();
+
+        assertEquals("{4}=>{6}=>{2}=>NULL!",stack.toString(),"it should show this:{4}=>{6}=>{2}=>NULL!");
+    }
+    @Test void stackIsEmptyTest(){
+        Stack<Integer> stack=new Stack<>();
+
+        stack.push(2);
+        stack.push(6);
+        stack.push(4);
+
+        stack.pop();
+        stack.pop();
+        stack.pop();
+
+        assertTrue(stack.isEmpty());
+    }
+
+    @Test void stackPeek(){
+        Stack<Integer> stack=new Stack<>();
+
+        stack.push(2);
+        stack.push(6);
+        stack.push(4);
+        stack.push(7);
+
+        assertEquals(7,stack.peek(),"it should return the peak");
+    }
+
+    // Queue tests:
+
+        @Test void EnqueueTest(){
+        Queue<Integer> queue=new Queue<>();
+
+        queue.Enqueue(3);
+        queue.Enqueue(6);
+        queue.Enqueue(8);
+        queue.Enqueue(15);
+
+        assertEquals("{3}=>{6}=>{8}=>{15}=>NULL!",queue.toString(),"it should show this:{3}=>{6}=>{8}=>{15}=>NULL!!");
+    }
+
+    @Test void dequeueTest(){
+        Queue<Integer> queue=new Queue<>();
+
+        queue.Enqueue(3);
+        queue.Enqueue(6);
+        queue.Enqueue(8);
+        queue.Enqueue(15);
+
+        queue.Dequeue();
+        queue.Dequeue();
+
+        assertEquals("{8}=>{15}=>NULL!",queue.toString(),"it should show this:{8}=>{15}=>NULL!");
+    }
+
+    @Test void  queueIsEmptyTest(){
+        Queue<Integer> queue=new Queue<>();
+
+        queue.Enqueue(3);
+        queue.Enqueue(6);
+        queue.Enqueue(8);
+        queue.Enqueue(15);
+
+        queue.Dequeue();
+        queue.Dequeue();
+        queue.Dequeue();
+        queue.Dequeue();
+
+        assertTrue(queue.isEmpty());
+    }
+    @Test void queuePeek(){
+        Queue<Integer> queue=new Queue<>();
+
+        queue.Enqueue(3);
+        queue.Enqueue(6);
+        queue.Enqueue(8);
+        queue.Enqueue(15);
+
+
+        assertEquals(3,queue.peek(),"it should return the peak");
+    }
+
 
 
 }

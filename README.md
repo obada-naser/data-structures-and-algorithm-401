@@ -12,6 +12,7 @@ Code Challenge-5 |  [Linked-List](allReads/Read5.md) | [Linked-List-code](challe
 Code Challenge-6 |  [linked-list-insertions](allReads/Read6.md) | [linked-list-insertions-code](challenges-401/linkedList/app/src/main/java/linkedList/LinkedList.java)
 Code Challenge-7 |  [linked-list-kth](allReads/Read7.md) | [linked-list-kth-code](challenges-401/linkedList/app/src/main/java/linkedList/LinkedList.java)
 Code Challenge-8 |  [linked-list-zip](allReads/Read8.md) | [linked-list-zip-code](challenges-401/linkedList/app/src/main/java/linkedList/LinkedList.java)
+Code Challenge-10 |  [Stacks-and-Queues](allReads/Read10.md) | [Stacks-code](challenges-401/linkedList/app/src/main/java/linkedList/Stack.java)  [Queues-code](challenges-401/linkedList/app/src/main/java/linkedList/Queue.java)
 
 
 
