@@ -130,6 +130,24 @@ class AppTest {
         assertEquals("PseudoQueue{stack1={8}=>{2}=>{7}=>NULL!, stack2=NULL!}",pseudoQueue.toString());
     }
 
+    @Test void animalShelter(){
+
+        AnimalShelter animal=new AnimalShelter();
+
+        Animal cat=new Cat();
+        Animal dog=new Dog();
+
+
+        animal.enqueue(cat);
+        animal.enqueue(dog);
+
+        animal.dequeue("cat");
+
+        assertEquals("AnimalShelter{dog={stackQueue.Dog@6fffcba5}=>NULL!, cat={stackQueue.Cat@34340fab}=>NULL!, otherAnimals=NULL!}",animal.toString());
+
+
+    }
+
 
 
 }

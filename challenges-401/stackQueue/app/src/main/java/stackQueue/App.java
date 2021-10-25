@@ -69,6 +69,33 @@ public class App {
 
         System.out.println(pseudoQueue.toString());
 
+        // *********************   AnimalShelter    ****************************
+
+        System.out.println("********** AnimalShelter  *********** ");
+
+        AnimalShelter animal=new AnimalShelter();
+
+        Animal cat=new Cat();
+        Animal dog=new Dog();
+
+//        cat.equals("cat");
+//        dog.equals("dog");
+;
+
+
+        animal.enqueue(cat);
+        animal.enqueue(dog);
+
+        System.out.println(animal.toString());
+
+
+
+        animal.dequeue("cat");
+        System.out.println(animal.toString());
+        System.out.println( animal.dequeue("cat"));
+        System.out.println(animal.dequeue("cow"));
+
+
 
 
     }

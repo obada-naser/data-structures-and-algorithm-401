@@ -5,32 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff1d2207-c778-4b78-835b-8c641d26d502" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../allReads/Read11.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../allReads/code-challenge-10-test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../allReads/code-challenge-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/PseudoQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/stackQueue/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/AnimalShelter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linkedList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linkedList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/stackQueue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/stackQueue/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/stackQueue/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.App">
@@ -76,6 +61,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="AppTest.animalShelter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;stackQueue.AppTest.animalShelter&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="AppTest.pseudoQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -121,8 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest.pseudoQueueTest" />
+        <item itemvalue="Gradle.AppTest.animalShelter" />
         <item itemvalue="Gradle.AppTest.pushTest" />
+        <item itemvalue="Gradle.AppTest.pseudoQueueTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -148,5 +155,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
