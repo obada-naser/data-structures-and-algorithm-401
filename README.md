@@ -14,7 +14,7 @@ Code Challenge-7 |  [linked-list-kth](allReads/Read7.md) | [linked-list-kth-code
 Code Challenge-8 |  [linked-list-zip](allReads/Read8.md) | [linked-list-zip-code](challenges-401/linkedList/app/src/main/java/linkedList/LinkedList.java)
 Code Challenge-10 |  [Stacks-and-Queues](allReads/Read10.md) | [Stacks-code](challenges-401/stackQueue/app/src/main/java/stackQueue/Stack.java)  [Queues-code](challenges-401/stackQueue/app/src/main/java/stackQueue/Queue.java)
 Code Challenge-11 |  [PseudoQueue](allReads/Read11.md) | [PseudoQueue-code](challenges-401/stackQueue/app/src/main/java/stackQueue/PseudoQueue.java)  
-Code Challenge-12 |  [stack-queue-animal-shelter](allReads/Read12.md) | [stack-queue-animal-shelter](challenges-401/stackQueue/app/build/classes/java/main/stackQueue/AnimalShelter.class)  
+Code Challenge-12 |  [stack-queue-animal-shelter](allReads/Read12.md) | [stack-queue-animal-shelter](challenges-401/stackQueue/app/src/main/java/stackQueue/AnimalShelter.java)  
 
 
 
