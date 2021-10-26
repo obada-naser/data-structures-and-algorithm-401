@@ -51,5 +51,7 @@ public class Stack <T> {
         return data;
 
     }
+
+
 }
 

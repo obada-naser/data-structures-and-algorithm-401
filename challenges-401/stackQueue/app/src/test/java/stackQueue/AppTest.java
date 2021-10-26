@@ -148,6 +148,19 @@ class AppTest {
 
     }
 
+    @Test void stackQueueBracketsTest(){
+        StackQueueBrackets brackets=new StackQueueBrackets();
+
+
+
+        assertTrue( brackets.stackQueueBrackets("{}"),"this should return true");
+        assertTrue( brackets.stackQueueBrackets("{}(){}"),"this should return true");
+        assertFalse(brackets.stackQueueBrackets("[({}]"),"this should return false");
+
+        assertFalse(brackets.stackQueueBrackets("(]("),"this should return false");
+
+    }
+
 
 
 }

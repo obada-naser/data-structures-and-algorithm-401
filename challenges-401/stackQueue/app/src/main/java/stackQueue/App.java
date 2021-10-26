@@ -95,6 +95,25 @@ public class App {
         System.out.println( animal.dequeue("cat"));
         System.out.println(animal.dequeue("cow"));
 
+        // *********************   stackQueuebrackets    ****************************
+
+        System.out.println("*************  stackQueuebrackets *************");
+
+        StackQueueBrackets brackets=new StackQueueBrackets();
+
+
+
+        System.out.println(brackets.stackQueueBrackets("{}"));
+        System.out.println(brackets.stackQueueBrackets("{}(){}"));
+        System.out.println(brackets.stackQueueBrackets("()[[Extra Characters]]"));
+        System.out.println(brackets.stackQueueBrackets("(){}[[]]"));
+        System.out.println(brackets.stackQueueBrackets("{}{Code}[Fellows](()) "));
+        System.out.println(brackets.stackQueueBrackets("[({}]"));
+        System.out.println(brackets.stackQueueBrackets("(]("));
+        System.out.println(brackets.stackQueueBrackets("{(})"));
+
+
+
 
 
 
