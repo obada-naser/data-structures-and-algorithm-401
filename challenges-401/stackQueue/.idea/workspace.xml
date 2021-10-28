@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff1d2207-c778-4b78-835b-8c641d26d502" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/StackQueueBrackets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/DuckDuckGoose.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stackQueue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stackQueue/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stackQueue/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/stackQueue/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/stackQueue/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Spring" />
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
