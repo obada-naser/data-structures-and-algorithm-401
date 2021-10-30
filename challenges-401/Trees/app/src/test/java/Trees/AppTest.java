@@ -11,4 +11,101 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test void emptyTreeTest(){
+
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+
+
+        assertNull(binaryTree.root);
+
+    }
+
+    @Test void addingRoot(){
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+        binaryTree.root=new Node(23);
+
+        assertEquals(23,binaryTree.root.value);
+
+    }
+
+    @Test void leftAndRightTest(){
+
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+
+        binaryTree.root.left.value=8;
+        binaryTree.root.right.value=42;
+
+        binaryTree.root.left = new Node<>(3);
+        binaryTree.root.right = new Node<>(5);
+        assertEquals(3,binaryTree.root.left.value);
+        assertEquals(5,binaryTree.root.right.value);
+
+
+
+    }
+
+
+    @Test void preOrderTest(){
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+
+
+
+        binaryTree.root=new Node(23);
+
+        binaryTree.root.left=new Node(8);
+        binaryTree.root.left.right=new Node(16);
+        binaryTree.root.left.left=new Node(4);
+        binaryTree.root.right=new Node(42);
+        binaryTree.root.right.left=new Node(27);
+
+        assertEquals("[23, 8, 4, 16, 42, 27, 65]",binaryTree.preOrder(binaryTree.root).toString());
+
+
+
+
+    }
+
+    @Test void inOrderTest(){
+
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+
+
+
+        binaryTree.root=new Node(23);
+
+        binaryTree.root.left=new Node(8);
+        binaryTree.root.left.right=new Node(16);
+        binaryTree.root.left.left=new Node(4);
+        binaryTree.root.right=new Node(42);
+        binaryTree.root.right.left=new Node(27);
+
+        assertEquals("[4, 8, 16, 23, 27, 42, 65]",binaryTree.inOrder(binaryTree.root).toString());
+
+
+    }
+
+    @Test void postOrderTest(){
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+
+
+
+        binaryTree.root=new Node(23);
+
+        binaryTree.root.left=new Node(8);
+        binaryTree.root.left.right=new Node(16);
+        binaryTree.root.left.left=new Node(4);
+        binaryTree.root.right=new Node(42);
+        binaryTree.root.right.left=new Node(27);
+
+        assertEquals("[4, 16, 8, 27, 65, 42, 23]",binaryTree.postOrder(binaryTree.root).toString());
+
+
+    }
+
+
+
+
+
+
 }
