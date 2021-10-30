@@ -10,5 +10,45 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree();
+
+
+
+
+        binaryTree.root=new Node(23);
+
+        binaryTree.root.left=new Node(8);
+        binaryTree.root.left.right=new Node(16);
+        binaryTree.root.left.left=new Node(4);
+        binaryTree.root.right=new Node(42);
+        binaryTree.root.right.left=new Node(27);
+
+
+        System.out.println(binaryTree.containsValue(65));
+
+        binaryTree.addingValue(65);
+        System.out.println( binaryTree.preOrder(binaryTree.root));
+        System.out.println(binaryTree.inOrder(binaryTree.root));
+        System.out.println(binaryTree.postOrder(binaryTree.root));
+
+
+
+
+
+//        System.out.println(binaryTree.preOrderList);
+        System.out.println(binaryTree.containsValue(65));
+
+        System.out.println(binaryTree.isEmpty());
+
+
+
+
+
+
+
+
+
+
     }
 }
