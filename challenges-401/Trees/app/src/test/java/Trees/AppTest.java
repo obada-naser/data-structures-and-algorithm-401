@@ -103,6 +103,20 @@ class AppTest {
 
     }
 
+    @Test void treeMaxTest(){
+
+        BinarySearchTree<Integer> binaryTree=new BinarySearchTree<>();
+        binaryTree.root=new Node(23);
+
+        binaryTree.root.left=new Node(8);
+        binaryTree.root.left.right=new Node(16);
+        binaryTree.root.left.left=new Node(4);
+        binaryTree.root.right=new Node(42);
+        binaryTree.root.right.left=new Node(27);
+        binaryTree.addingValue(65);
+
+        assertEquals(65,binaryTree.treeMax(),"it should return the max value");
+    }
 
 
 

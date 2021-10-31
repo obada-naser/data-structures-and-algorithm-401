@@ -36,8 +36,12 @@ public class App {
 
 
 
+
+
 //        System.out.println(binaryTree.preOrderList);
         System.out.println(binaryTree.containsValue(65));
+        System.out.println("************* max number *********");
+        System.out.println(binaryTree.treeMax());
 
         System.out.println(binaryTree.isEmpty());
 
