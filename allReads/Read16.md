@@ -18,4 +18,4 @@ It is about traversing the tree in breadth first method and put the output insid
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
-![whiteboard](/allReads/code-challenge-17-test.png)
+![solution](/allReads/code-challenge-17-test.png)
