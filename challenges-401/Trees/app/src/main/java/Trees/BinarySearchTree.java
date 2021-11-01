@@ -1,5 +1,9 @@
 package Trees;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinarySearchTree<T> extends BinaryTree<T> {
 
 
@@ -68,10 +72,31 @@ public class BinarySearchTree<T> extends BinaryTree<T> {
 
 
     }
+    public ArrayList<Integer> breadthFirst(BinaryTree<Integer> tree) {
+        ArrayList<Integer> nums =new ArrayList<Integer>();
+        Queue<Node> queue = new LinkedList<>();
+        if (tree.root != null) {
+            queue.add(tree.root);
+            while (!queue.isEmpty()) {
+                Node newNode = queue.remove();
+                nums.add((Integer)newNode.value);
+                if (newNode.left != null) {
+                    queue.add(newNode.left);
+                }
+                if (newNode.right != null) {
+                    queue.add(newNode.right);
+                }
+            }
+        }
+        return nums;
+    }
 
     public boolean isEmpty() {
         return root == null;
     }
+
+
+
 
 
 }
