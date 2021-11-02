@@ -135,6 +135,19 @@ class AppTest {
 
     }
 
+    @ Test void KaryTreeTest(){
+
+
+        KaryTree<Integer> kTree = new KaryTree<>(3);
+        kTree.add(3);
+        kTree.add(4);
+        kTree.add(25);
+
+        assertEquals("Fizz", kTree.fizzBuzzTree(kTree),"it should return a fizz or buzz");
+
+    }
+
+
 
 
 

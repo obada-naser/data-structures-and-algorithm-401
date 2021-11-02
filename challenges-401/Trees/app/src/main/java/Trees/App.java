@@ -45,7 +45,7 @@ public class App {
 
         binaryTree.addingValue(65);
 
-    ;
+
 
 
         System.out.println( binaryTree.preOrder(binaryTree.root));
@@ -70,6 +70,17 @@ public class App {
 
         System.out.println(binaryTree.breadthFirst(binaryTree));
 
+
+
+        System.out.println("*********** K-ary tree ************");
+
+        KaryTree<Integer> kTree = new KaryTree<>(9);
+        kTree.add(3);
+        kTree.add(6);
+        kTree.add(9);
+
+
+        System.out.println(kTree.fizzBuzzTree(kTree).root.value);
 
 
 
