@@ -56,6 +56,19 @@ public class BinaryTree<T> {
 
     }
 
+    public int oddSum(){
+        int sum=0;
+
+        ArrayList<T> list = inOrderList;
+
+        for(T num:list){
+            if((int)num%2 !=0){
+                sum=sum+(int)num;
+            }
+        }
+        return sum;
+    }
+
 
 
 
