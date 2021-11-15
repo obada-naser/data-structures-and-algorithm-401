@@ -23,4 +23,13 @@ class AppTest {
 
     assertEquals("[ 4, 8, 15, 16, 23, 42]", Arrays.toString(insertionSort.insertionSort(arr)));
 }
+
+    @Test
+    public void mergeSortTest() {
+        MergeSort mergingSort=new MergeSort();
+
+        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
+
+        assertEquals("[ 4, 8, 15, 16, 23, 42]", Arrays.toString(mergingSort.mergeSort(arr)));
+    }
 }
