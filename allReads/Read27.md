@@ -4,6 +4,7 @@ The challenge was about sorting an array of numbers using the merge sorting.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+![test](/allReads/code-challenge-27.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
