@@ -82,6 +82,10 @@ public class App {
 
         System.out.println(kTree.fizzBuzzTree(kTree).root.value);
 
+        System.out.println("*********** Sum odd tree ************");
+
+        System.out.println(binaryTree.oddSum());
+
 
 
 
