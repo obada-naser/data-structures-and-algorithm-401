@@ -1,4 +1,4 @@
-# Merge Sort-blog
+# MergeSort-blog
 
 ## Description
 
