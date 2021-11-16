@@ -1,4 +1,4 @@
-# Insertion Sort-blog
+# InsertionSort-blog
 
 ## Description
 
