@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MergeSort {
 
-    public static int[] mergeSort(int[] arr){
+    public int[] mergeSort(int[] arr){
         int n =arr.length;
         int[] newArr = new int[arr.length];
         if(n>1){
@@ -19,7 +19,7 @@ public class MergeSort {
         return newArr;
     }
 
-    public static int[] merge(int[] left,int[] right,int[] arr){
+    public int[] merge(int[] left,int[] right,int[] arr){
         int i =0;
         int j =0;
         int k =0;

@@ -32,4 +32,15 @@ class AppTest {
 
         assertEquals("[ 4, 8, 15, 16, 23, 42]", Arrays.toString(mergingSort.mergeSort(arr)));
     }
+    @Test
+    public void quickSortTest() {
+
+        QuickSort quickSorts=new QuickSort();
+
+        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
+
+        assertEquals("[ 4, 8, 15, 16, 23, 42]",Arrays.toString(quickSorts.quickSort(arr, 0, arr.length-1)));
+
+        assertNotNull(Arrays.toString(quickSorts.quickSort(arr, 0, arr.length-1)));
+    }
 }
