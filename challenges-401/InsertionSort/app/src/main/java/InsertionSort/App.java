@@ -28,6 +28,12 @@ public class App {
         MergeSort mergingSort=new MergeSort();
 
         System.out.println(Arrays.toString(mergingSort.mergeSort(arr)));
+
+        System.out.println("**************** Quick sorting ********************");
+
+        QuickSort quickSorts=new QuickSort();
+
+        System.out.println(Arrays.toString(quickSorts.quickSort(arr, 0, arr.length-1)));
     }
 
 
