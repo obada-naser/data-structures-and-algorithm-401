@@ -71,5 +71,19 @@ class AppTest {
 
     }
 
+    @Test void repeatedWordTest(){
+        HashMapWords hashMapWords=new HashMapWords();
+
+        String word1="Once upon a time, there was a brave princess who...";
+
+        assertEquals("a",hashMapWords.repeatWord(word1));
+
+        String word2 = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+        assertEquals("summer",hashMapWords.repeatWord(word2));
+
+        String word3="there is no repated word";
+        assertNull(hashMapWords.repeatWord(word3));
+    }
+
 
 }
