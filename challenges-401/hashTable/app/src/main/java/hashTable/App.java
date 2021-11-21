@@ -3,6 +3,8 @@
  */
 package hashTable;
 
+import java.util.HashMap;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -21,10 +23,10 @@ public class App {
 
 
 
-//
-//        System.out.println(newHash.get("hello"));
-//        System.out.println(newHash.get("hi"));
-//        System.out.println(newHash.contains("hi"));
+
+        System.out.println(newHash.get("hello"));
+        System.out.println(newHash.get("hi"));
+        System.out.println(newHash.contains("hi"));
 
         newHash.add("a","first");
         System.out.println(newHash.get("a"));
@@ -36,8 +38,18 @@ public class App {
         System.out.println(newHash.nodes[7].next.value);
 
 
+        System.out.println("********** hashMapWords");
+
+        HashMapWords hashMapWords=new HashMapWords();
+
+        String words = "\"It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...\"";
+        System.out.println(hashMapWords.repeatWord(words));
+
+
+
 
     }
+
 
 
 }
