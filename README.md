@@ -23,7 +23,7 @@ Code Challenge-18 |  [Trees-breathFirst](allReads/Read18.md) | [Trees-breathFirs
 Code Challenge-26 |  [InsertionSort](allReads/Read26.md)   &    [InsertionSort-blog](allReads/insertionBlog.md)  | [InsertionSort-code](challenges-401/InsertionSort/app/src/main/java/InsertionSort/InsertionSort.java)  
 Code Challenge-27 |  [MergeSort](allReads/Read27.md)   &    [MergeSort-blog](allReads/MergeBlog.md)  | [MergeSort-code](challenges-401/InsertionSort/app/src/main/java/InsertionSort/MergeSort.java) 
 Code Challenge-28 |  [QuickSort](allReads/Read28.md)   &    [QuickSort-blog](allReads/QuickBlog.md)  | [QuickSort-code](challenges-401/InsertionSort/app/src/main/java/InsertionSort/QuickSort.java) 
-
+Code Challenge-30 |  [HashTable](allReads/Read30.md)      | [HashTable-code](challenges-401/hashTable/app/src/main/java/hashTable/HashTable.java) 
 
 
 
