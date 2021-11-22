@@ -25,6 +25,7 @@ Code Challenge-27 |  [MergeSort](allReads/Read27.md)   &    [MergeSort-blog](all
 Code Challenge-28 |  [QuickSort](allReads/Read28.md)   &    [QuickSort-blog](allReads/QuickBlog.md)  | [QuickSort-code](challenges-401/InsertionSort/app/src/main/java/InsertionSort/QuickSort.java) 
 Code Challenge-30 |  [HashTable](allReads/Read30.md)      | [HashTable-code](challenges-401/hashTable/app/src/main/java/hashTable/HashTable.java) 
 Code Challenge-31 |  [HashTable-repeatedWord](allReads/Read31.md)      | [HashTable-repeatedWord-code](challenges-401/hashTable/app/src/main/java/hashTable/HashMapWords.java) 
+Code Challenge-32 |  [HashTable-tree-intersection](allReads/Read32.md)      | [HashTable-tree-intersection-code](challenges-401/hashTable/app/src/main/java/hashTable/TreeIntersection.java) 
 
 
 

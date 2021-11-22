@@ -21,6 +21,11 @@ public class HashTable {
         }
 
     }
+    public HashTable(){
+
+    }
+
+
 
     public int hash(String key){
 
@@ -51,6 +56,8 @@ public class HashTable {
             nodes[index].next=hashNode;
         }
     }
+
+
 
     public String get(String key){
 
