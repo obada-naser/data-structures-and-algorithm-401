@@ -85,5 +85,80 @@ class AppTest {
         assertNull(hashMapWords.repeatWord(word3));
     }
 
+    @Test void emptyTreeTest(){
+
+        TreeIntersection treeIntersectionHash = new TreeIntersection();
+
+
+        assertNull(treeIntersectionHash.root);
+
+    }
+
+
+    @Test void preOrderTest(){
+        TreeNode Tree1 = new TreeNode();
+        Tree1.root = new TreeNode(150);
+        Tree1.root.left = new TreeNode(100);
+        Tree1.root.left.left = new TreeNode(75);
+        Tree1.root.left.right = new TreeNode(160);
+        Tree1.root.left.right.left = new TreeNode(125);
+        Tree1.root.left.right.right = new TreeNode(175);
+        Tree1.root.right = new TreeNode(250);
+        Tree1.root.right.left = new TreeNode(200);
+        Tree1.root.right.right = new TreeNode(350);
+        Tree1.root.right.right.left = new TreeNode(300);
+        Tree1.root.right.right.right = new TreeNode(500);
+
+        TreeIntersection treeIntersectionHash = new TreeIntersection();
+
+
+        assertEquals(treeIntersectionHash.preOrder(Tree1.root),treeIntersectionHash.hashMap);
+
+        assertNotNull(treeIntersectionHash.preOrder(Tree1.root));
+
+
+
+
+    }
+
+    @Test void treeInsertionTest(){
+        TreeNode Tree1 = new TreeNode();
+        Tree1.root = new TreeNode(150);
+        Tree1.root.left = new TreeNode(100);
+        Tree1.root.left.left = new TreeNode(75);
+        Tree1.root.left.right = new TreeNode(160);
+        Tree1.root.left.right.left = new TreeNode(125);
+        Tree1.root.left.right.right = new TreeNode(175);
+        Tree1.root.right = new TreeNode(250);
+        Tree1.root.right.left = new TreeNode(200);
+        Tree1.root.right.right = new TreeNode(350);
+        Tree1.root.right.right.left = new TreeNode(300);
+        Tree1.root.right.right.right = new TreeNode(500);
+
+        TreeNode Tree2 = new TreeNode();
+        Tree2.root = new TreeNode(42);
+        Tree2.root.left = new TreeNode(100);
+        Tree2.root.left.left = new TreeNode(15);
+        Tree2.root.left.right = new TreeNode(160);
+        Tree2.root.left.right.left = new TreeNode(125);
+        Tree2.root.left.right.right = new TreeNode(175);
+        Tree2.root.right = new TreeNode(600);
+        Tree2.root.right.left = new TreeNode(200);
+        Tree2.root.right.right = new TreeNode(350);
+        Tree2.root.right.right.left = new TreeNode(4);
+        Tree2.root.right.right.right = new TreeNode(500);
+
+        TreeIntersection treeIntersectionHash = new TreeIntersection();
+
+        assertEquals("[100, 160, 125, 175, 200, 350, 500]",treeIntersectionHash.treeInsertion(Tree1, Tree2).toString());
+        assertNotNull(treeIntersectionHash.treeInsertion(Tree1, Tree2));
+
+    }
+
+
+
+
+
+
 
 }

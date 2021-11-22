@@ -3,7 +3,7 @@
  */
 package hashTable;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class App {
     public String getGreeting() {
@@ -44,6 +44,82 @@ public class App {
 
         String words = "\"It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...\"";
         System.out.println(hashMapWords.repeatWord(words));
+
+        System.out.println("********** testing");
+
+        TestingLinkeList<Integer> test=new TestingLinkeList<>();
+
+        test.insert(1);
+        test.insert(2);
+        test.insert(5);
+        test.insert(8);
+        System.out.println(test.toString());
+        System.out.println(test.kvalue(8));
+
+        TestingLinkeList<Integer> test1=new TestingLinkeList<>();
+        TestingLinkeList<Integer> test2=new TestingLinkeList<>();
+        TestingLinkeList<Integer> test3=new TestingLinkeList<>();
+
+        test1.insert(1);
+        test1.insert(3);
+        test1.insert(5);
+        test1.insert(7);
+
+        test2.insert(2);
+        test2.insert(4);
+        test2.insert(6);
+        test2.insert(8);
+
+        System.out.println((test3.zipLists(test1,test2)));
+
+        test.append(9);
+        System.out.println(test);
+        test.insertBefore(2,3);
+        System.out.println(test);
+        test.insertAfter(3,6);
+        System.out.println(test);
+        System.out.println("************ tree intersection");
+
+        TreeNode Tree1 = new TreeNode();
+        Tree1.root = new TreeNode(150);
+        Tree1.root.left = new TreeNode(100);
+        Tree1.root.left.left = new TreeNode(75);
+        Tree1.root.left.right = new TreeNode(160);
+        Tree1.root.left.right.left = new TreeNode(125);
+        Tree1.root.left.right.right = new TreeNode(175);
+        Tree1.root.right = new TreeNode(250);
+        Tree1.root.right.left = new TreeNode(200);
+        Tree1.root.right.right = new TreeNode(350);
+        Tree1.root.right.right.left = new TreeNode(300);
+        Tree1.root.right.right.right = new TreeNode(500);
+
+        TreeNode Tree2 = new TreeNode();
+        Tree2.root = new TreeNode(42);
+        Tree2.root.left = new TreeNode(100);
+        Tree2.root.left.left = new TreeNode(15);
+        Tree2.root.left.right = new TreeNode(160);
+        Tree2.root.left.right.left = new TreeNode(125);
+        Tree2.root.left.right.right = new TreeNode(175);
+        Tree2.root.right = new TreeNode(600);
+        Tree2.root.right.left = new TreeNode(200);
+        Tree2.root.right.right = new TreeNode(350);
+        Tree2.root.right.right.left = new TreeNode(4);
+        Tree2.root.right.right.right = new TreeNode(500);
+
+
+        TreeIntersection treeIntersectionHash = new TreeIntersection();
+        System.out.println("****************");
+
+
+        System.out.println(treeIntersectionHash.preOrder(Tree1.root));
+        System.out.println("****************");
+//        ArrayList list=new ArrayList();
+//        treeIntersectionHash.traverse(Tree1.root,list);
+
+        System.out.println("****************");
+
+        System.out.println(treeIntersectionHash.treeInsertion(Tree1, Tree2));
+
 
 
 
