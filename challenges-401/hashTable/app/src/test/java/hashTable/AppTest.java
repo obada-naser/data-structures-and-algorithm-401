@@ -4,6 +4,9 @@
 package hashTable;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -152,6 +155,58 @@ class AppTest {
 
         assertEquals("[100, 160, 125, 175, 200, 350, 500]",treeIntersectionHash.treeInsertion(Tree1, Tree2).toString());
         assertNotNull(treeIntersectionHash.treeInsertion(Tree1, Tree2));
+
+    }
+
+    @Test void addingHashableTest(){
+
+        HashMap hashMap1=new HashMap();
+
+        hashMap1.put("fond","enamored");
+        hashMap1.put("wrath","anger");
+        hashMap1.put("diligent","employed");
+        hashMap1.put("outfit","garb");
+        hashMap1.put("guide","usher");
+
+
+
+        assertEquals("{diligent=employed, outfit=garb, wrath=anger, guide=usher, fond=enamored}",hashMap1.toString());
+
+
+
+
+
+    }
+
+    @Test void leftJoinTest(){
+        HashMap hashMap1=new HashMap();
+        HashMap hashMap2=new HashMap();
+
+
+        hashMap1.put("fond","enamored");
+        hashMap1.put("wrath","anger");
+        hashMap1.put("diligent","employed");
+        hashMap1.put("outfit","garb");
+        hashMap1.put("guide","usher");
+
+
+        hashMap2.put("fond","averse");
+        hashMap2.put("wrath","delight");
+        hashMap2.put("diligent","idle");
+        hashMap2.put("guide","follow");
+        hashMap2.put("flow","jam");
+
+        HashMapLeft hashMapLeft=new HashMapLeft();
+
+
+        assertEquals("[[ diligent , employed , idle ]\n" +
+                ", [ outfit , garb , NULL  ] \n" +
+                ", [ wrath , anger , delight ]\n" +
+                ", [ guide , usher , follow ]\n" +
+                ", [ fond , enamored , averse ]\n" +
+                "]", hashMapLeft.mapleft(hashMap1,hashMap2).toString()
+        );
+        assertNotNull(hashMapLeft.mapleft(hashMap1,hashMap2));
 
     }
 

@@ -4,6 +4,7 @@
 package hashTable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class App {
     public String getGreeting() {
@@ -116,9 +117,38 @@ public class App {
 //        ArrayList list=new ArrayList();
 //        treeIntersectionHash.traverse(Tree1.root,list);
 
-        System.out.println("****************");
+
 
         System.out.println(treeIntersectionHash.treeInsertion(Tree1, Tree2));
+
+       System.out.println("**************** hashmap left join");
+
+
+        HashMap hashMap1=new HashMap();
+        HashMap hashMap2=new HashMap();
+
+
+        hashMap1.put("fond","enamored");
+        hashMap1.put("wrath","anger");
+        hashMap1.put("diligent","employed");
+        hashMap1.put("outfit","garb");
+        hashMap1.put("guide","usher");
+
+
+        hashMap2.put("fond","averse");
+        hashMap2.put("wrath","delight");
+        hashMap2.put("diligent","idle");
+        hashMap2.put("guide","follow");
+        hashMap2.put("flow","jam");
+
+
+        HashMapLeft hashMapLeft=new HashMapLeft();
+
+
+
+        System.out.println( hashMapLeft.mapleft(hashMap1,hashMap2));
+
+
 
 
 
