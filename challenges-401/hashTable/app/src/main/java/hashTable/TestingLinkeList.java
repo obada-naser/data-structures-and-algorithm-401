@@ -140,6 +140,17 @@ public class TestingLinkeList<T> {
 
 
     }
+    public boolean hasCycle(Node head) {
+        Node current=head;
+        while(current!=null){
+            if(current.next==null){
+                return false;
+            }
+            current=current.next;
+        }
+
+        return true;
+    }
 
 
 
