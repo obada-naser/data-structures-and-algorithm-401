@@ -152,6 +152,49 @@ public class TestingLinkeList<T> {
         return true;
     }
 
+    public boolean isPalindrome() {
+        Node current=head;
+
+        Node otherHalf;
+        Node firstHalf;
+
+
+
+        while(current.next!=null){
+
+
+
+            current=current.next;
+
+        }
+        otherHalf=current;
+//        System.out.println(otherHalf.value);
+        firstHalf=head;
+//        System.out.println(firstHalf.value);
+
+
+        while(firstHalf.value!=otherHalf.value){
+            if(firstHalf.value==otherHalf.value){
+                System.out.println("firstHalf");
+//                firstHalf=firstHalf.next;
+//
+//
+//                otherHalf.next=otherHalf;
+                System.out.println("otherHalf.next");
+
+            }else{
+//                System.out.println(firstHalf.value);
+//                System.out.println(otherHalf.value);
+                return false;
+
+            }
+
+        }
+
+        return true;
+
+    }
+
 
 
     @Override
