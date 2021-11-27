@@ -4,11 +4,82 @@
 package Graph;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+
     }
+
+    @Test void addingToGraphTest(){
+        Graph<String> graphs=new Graph<String>();
+
+        assertEquals(graphs.addVertex("O"),graphs.graph.containsKey(graphs.addVertex("O")));
+
+    }
+
+    @Test void addingEdgeTest(){
+        Graph<String> graph=new Graph<String>();
+        Vertex<String> vertexOne=new Vertex<String>("O");
+        Vertex<String> vertexTwo=new Vertex<String>("N");
+
+        graph.addEdge(vertexOne,vertexTwo ,true);
+
+
+        assertEquals(vertexTwo , graph.getNeighbors(vertexOne).get(0));
+
+
+    }
+
+    @Test void addingNeighborsTest(){
+        Set<Vertex<String>> result = new HashSet<>();
+        Vertex<String> vertexOne=new Vertex<String>("O");
+        Vertex<String> vertexTwo=new Vertex<String>("N");
+        result.add(vertexOne);
+        result.add(vertexTwo);
+        Graph<String> graph=new Graph<String>();
+
+        assertEquals(result, graph.getNodes());
+
+
+
+
+    }
+    @Test void sizeTest(){
+
+        Graph<String> graph=new Graph<String>();
+        Vertex<String> vertexOne=new Vertex<String>("O");
+        Vertex<String> vertexTwo=new Vertex<String>("N");
+
+        graph.addEdge(vertexOne,vertexTwo ,true);
+
+        assertEquals(2,graph.getSize());
+
+    }
+
+    @Test void oneNodeTest(){
+        Graph<String> graph = new Graph<String>();
+        Vertex<String> vertex = graph.addVertex("A");
+
+        Set<Vertex<String>> result5 = new HashSet<>();
+        result5.add(vertex);
+
+
+        assertEquals(result5, graph.getNodes());
+
+
+
+//        An empty graph properly returns null
+        Graph<String> emptyGraph = new Graph<String>();
+
+        assertNull(emptyGraph.getNodes());
+    }
+
 }
