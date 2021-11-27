@@ -148,6 +148,21 @@ public class App {
 
         System.out.println( hashMapLeft.mapleft(hashMap1,hashMap2));
 
+        UniqueChar uniqueChar=new UniqueChar();
+
+        System.out.println(uniqueChar.unique("Donald the duck"));
+
+
+     System.out.println("**************** palinrome");
+
+     TestingLinkeList<Integer> test4=new TestingLinkeList<>();
+
+     test4.insert(1);
+     test4.insert(2);
+     test4.insert(2);
+     test4.insert(1);
+
+     System.out.println(test4.isPalindrome());
 
 
 
