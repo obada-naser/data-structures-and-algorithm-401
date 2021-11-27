@@ -3,6 +3,8 @@
  */
 package Graph;
 
+import java.util.Arrays;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -10,5 +12,26 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        Graph<String> graph=new Graph<String>();
+
+
+
+
+
+
+
+        graph.addEdge(graph.addVertex("O"), graph.addVertex("B"),true);
+        graph.addEdge(graph.addVertex("O"), graph.addVertex("A"),true);
+        graph.addEdge( graph.addVertex("D"),graph.addVertex("A"),true);
+
+
+        System.out.println(graph.toString());
+
+
+
+
+
     }
+
 }

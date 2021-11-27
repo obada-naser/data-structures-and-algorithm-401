@@ -1,11 +1,15 @@
 package Graph;
 
-public class Vertex {
+public class Vertex<T> {
 
-  int value;
+  T value;
   int weight;
 
-  public Vertex(int value, int weight)  {
+  public Vertex(T value) {
+    this.value = value;
+  }
+
+  public Vertex(T value, int weight)  {
     this.value = value;
     this.weight = weight;
   }
