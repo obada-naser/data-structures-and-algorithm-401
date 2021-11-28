@@ -70,6 +70,36 @@ public class Graph<T> {
 //        return (builder.toString());
 //    }
 
+    public List<Vertex<T>> breadthFirst(Vertex<T> root){
+        List<Vertex<T>> list = new ArrayList<>();
+        Set<Vertex<T>> visited = new HashSet<>();
+        List<Vertex<T>> queue = new ArrayList<>();
+
+        queue.add(root);
+        visited.add(root);
+
+        while(!queue.isEmpty()){
+            Vertex<T> front = queue.get(0);
+            queue.remove(0);
+            list.add(front);
+
+            for (int i = 0; i < graph.get(front).size(); i++) {
+                if (! visited.contains(graph.get(front).get(i))){
+                    visited.add(graph.get(front).get(i));
+                    queue.add(graph.get(front).get(i));
+                }
+            }
+
+        }
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i).value+"    ");
+        }
+        return list;
+    }
+
+
+
+
 
 
 
