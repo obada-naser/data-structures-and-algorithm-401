@@ -82,4 +82,23 @@ class AppTest {
         assertNull(emptyGraph.getNodes());
     }
 
+    @Test void BreadthFirstTest(){
+        Graph<String> graph = new Graph<String>();
+        Vertex a = graph.addVertex("O");
+        Vertex b =  graph.addVertex("B");
+        Vertex c = graph.addVertex("A");
+        Vertex d = graph.addVertex("D");
+        Vertex A = graph.addVertex("A");
+
+        graph.addEdge(a,b,true);
+        graph.addEdge(a,c,true);
+        graph.addEdge(c,d,true);
+        graph.addEdge(b,d,true);
+        graph.addEdge(A,d,true);
+
+        assertEquals("O    B    A    D    A ",graph.breadthFirst(a));
+        assertNotNull(graph.breadthFirst(a));
+
+    }
+
 }
