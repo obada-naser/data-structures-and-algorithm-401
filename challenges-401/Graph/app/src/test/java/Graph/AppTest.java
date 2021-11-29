@@ -101,4 +101,49 @@ class AppTest {
 
     }
 
+    @Test void validTripTest(){
+        Graph<String> graph = new Graph<String>();
+        Vertex a = graph.addVertex("O");
+        Vertex b =  graph.addVertex("B");
+        Vertex c = graph.addVertex("A");
+        Vertex d = graph.addVertex("D");
+        Vertex A = graph.addVertex("A");
+
+        Vertex[] trip2 = new Vertex[] {a,b};
+        Vertex[] trip3 = new Vertex[] {c,d,A};
+        assertEquals("true, $82" , graph.businessTrip(graph,trip2));
+        assertEquals("true, $204" , graph.businessTrip(graph,trip3));
+
+    }
+
+    @Test void invalidTripTest(){
+        Graph<String> graph = new Graph<String>();
+        Vertex a = graph.addVertex("O");
+        Vertex b =  graph.addVertex("B");
+        Vertex c = graph.addVertex("A");
+        Vertex d = graph.addVertex("D");
+        Vertex A = graph.addVertex("A");
+
+        Vertex[] trip2 = new Vertex[] {a,c};
+
+        assertEquals("true, $82" , graph.businessTrip(graph,trip2));
+
+
+    }
+
+    @Test void roundTripTest(){
+        Graph<String> graph = new Graph<String>();
+        Vertex a = graph.addVertex("O");
+        Vertex b =  graph.addVertex("B");
+        Vertex c = graph.addVertex("A");
+        Vertex d = graph.addVertex("D");
+        Vertex A = graph.addVertex("A");
+
+        Vertex[] trip2 = new Vertex[] {a,b,c,d};
+
+        assertEquals("true, $82" , graph.businessTrip(graph,trip2));
+
+
+    }
+
 }

@@ -31,6 +31,19 @@ public class App {
         graph.addEdge(b,d,true);
         graph.addEdge(A,d,true);
 
+        Graph<String> graph1 = new Graph<String>();
+
+
+        Vertex[] trip2 = new Vertex[] {a,b};
+        Vertex[] trip3 = new Vertex[] {c,d,A};
+        System.out.println(graph1.businessTrip(graph,trip2));
+
+
+
+
+
+
+
 
 
 

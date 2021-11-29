@@ -5,6 +5,8 @@ import java.util.*;
 public class Graph<T> {
 
     Map<Vertex<T>,   ArrayList<Vertex<T>>> graph=new HashMap();
+    public Map<Vertex<T>, List<Vertex<T>>> adjacencyList;
+
 
 
     public Vertex addVertex(T value){
@@ -45,7 +47,8 @@ public class Graph<T> {
     }
 
     public List<Vertex<T>> getNeighbors(Vertex<T> vertex){
-       return graph.get(vertex);
+//       return graph.get(vertex);
+        return this.adjacencyList.get(vertex);
     }
 
     public int getSize(){
@@ -97,6 +100,37 @@ public class Graph<T> {
         return list;
     }
 
+    public String businessTrip(Graph<T> graph, Vertex<T>[] cities) {
+
+        int cost = 0;
+        boolean foundCity = false;
+
+        for (Vertex<T> v : cities) {
+            if (!graph.getNodes().contains(v)) {
+                return  "false, $0";
+            }
+        }
+
+        for (int i = 0; i < cities.length - 1; i++) {
+            foundCity = false;
+
+            for (Vertex<T> edge : graph.getNeighbors(cities[i])) {
+
+                if (edge.value.equals(cities[i + 1].value)) {
+                    cost += edge.weight;
+                    foundCity = true;
+                    break;
+                }
+            }
+
+            if (!foundCity) {
+                // return -> boolean, cost
+                return "false, $0";
+            }
+        }
+
+        return foundCity + ", $" + cost;
+    }
 
 
 
