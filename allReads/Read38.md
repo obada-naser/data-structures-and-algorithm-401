@@ -14,7 +14,6 @@ It is required to traverse the tree using depth first pre-order.
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![whiteboard](/allReads/code-challenge-37.png)
+![whiteboard](/allReads/code-challenge-38.png)
 
-## Requirements
-Ensure your complete solution follows the standard requirements.
+.
