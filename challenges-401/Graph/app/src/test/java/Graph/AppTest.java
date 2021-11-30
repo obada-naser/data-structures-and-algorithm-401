@@ -5,7 +5,9 @@ package Graph;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,21 +21,21 @@ class AppTest {
     }
 
     @Test void addingToGraphTest(){
-        Graph<String> graphs=new Graph<String>();
+        Graphs<String> graphs=new Graphs<String>();
 
         assertEquals(graphs.addVertex("O"),graphs.graph.containsKey(graphs.addVertex("O")));
 
     }
 
     @Test void addingEdgeTest(){
-        Graph<String> graph=new Graph<String>();
+        Graphs<String> graphs =new Graphs<String>();
         Vertex<String> vertexOne=new Vertex<String>("O");
         Vertex<String> vertexTwo=new Vertex<String>("N");
 
-        graph.addEdge(vertexOne,vertexTwo ,true);
+        graphs.addEdge(vertexOne,vertexTwo ,true);
 
 
-        assertEquals(vertexTwo , graph.getNeighbors(vertexOne).get(0));
+        assertEquals(vertexTwo , graphs.getNeighbors(vertexOne).get(0));
 
 
     }
@@ -44,9 +46,9 @@ class AppTest {
         Vertex<String> vertexTwo=new Vertex<String>("N");
         result.add(vertexOne);
         result.add(vertexTwo);
-        Graph<String> graph=new Graph<String>();
+        Graphs<String> graphs =new Graphs<String>();
 
-        assertEquals(result, graph.getNodes());
+        assertEquals(result, graphs.getNodes());
 
 
 
@@ -54,94 +56,122 @@ class AppTest {
     }
     @Test void sizeTest(){
 
-        Graph<String> graph=new Graph<String>();
+        Graphs<String> graphs =new Graphs<String>();
         Vertex<String> vertexOne=new Vertex<String>("O");
         Vertex<String> vertexTwo=new Vertex<String>("N");
 
-        graph.addEdge(vertexOne,vertexTwo ,true);
+        graphs.addEdge(vertexOne,vertexTwo ,true);
 
-        assertEquals(2,graph.getSize());
+        assertEquals(2, graphs.getSize());
 
     }
 
     @Test void oneNodeTest(){
-        Graph<String> graph = new Graph<String>();
-        Vertex<String> vertex = graph.addVertex("A");
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex<String> vertex = graphs.addVertex("A");
 
         Set<Vertex<String>> result5 = new HashSet<>();
         result5.add(vertex);
 
 
-        assertEquals(result5, graph.getNodes());
+        assertEquals(result5, graphs.getNodes());
 
 
 
 //        An empty graph properly returns null
-        Graph<String> emptyGraph = new Graph<String>();
+        Graphs<String> emptyGraphs = new Graphs<String>();
 
-        assertNull(emptyGraph.getNodes());
+        assertNull(emptyGraphs.getNodes());
     }
 
     @Test void BreadthFirstTest(){
-        Graph<String> graph = new Graph<String>();
-        Vertex a = graph.addVertex("O");
-        Vertex b =  graph.addVertex("B");
-        Vertex c = graph.addVertex("A");
-        Vertex d = graph.addVertex("D");
-        Vertex A = graph.addVertex("A");
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex a = graphs.addVertex("O");
+        Vertex b =  graphs.addVertex("B");
+        Vertex c = graphs.addVertex("A");
+        Vertex d = graphs.addVertex("D");
+        Vertex A = graphs.addVertex("A");
 
-        graph.addEdge(a,b,true);
-        graph.addEdge(a,c,true);
-        graph.addEdge(c,d,true);
-        graph.addEdge(b,d,true);
-        graph.addEdge(A,d,true);
+        graphs.addEdge(a,b,true);
+        graphs.addEdge(a,c,true);
+        graphs.addEdge(c,d,true);
+        graphs.addEdge(b,d,true);
+        graphs.addEdge(A,d,true);
 
-        assertEquals("O    B    A    D    A ",graph.breadthFirst(a));
-        assertNotNull(graph.breadthFirst(a));
+        assertEquals("O    B    A    D    A ", graphs.breadthFirst(a));
+        assertNotNull(graphs.breadthFirst(a));
 
     }
 
     @Test void validTripTest(){
-        Graph<String> graph = new Graph<String>();
-        Vertex a = graph.addVertex("O");
-        Vertex b =  graph.addVertex("B");
-        Vertex c = graph.addVertex("A");
-        Vertex d = graph.addVertex("D");
-        Vertex A = graph.addVertex("A");
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex a = graphs.addVertex("O");
+        Vertex b =  graphs.addVertex("B");
+        Vertex c = graphs.addVertex("A");
+        Vertex d = graphs.addVertex("D");
+        Vertex A = graphs.addVertex("A");
 
         Vertex[] trip2 = new Vertex[] {a,b};
         Vertex[] trip3 = new Vertex[] {c,d,A};
-        assertEquals("true, $82" , graph.businessTrip(graph,trip2));
-        assertEquals("true, $204" , graph.businessTrip(graph,trip3));
+        assertEquals("true, $82" , graphs.businessTrip(graphs,trip2));
+        assertEquals("true, $204" , graphs.businessTrip(graphs,trip3));
 
     }
 
     @Test void invalidTripTest(){
-        Graph<String> graph = new Graph<String>();
-        Vertex a = graph.addVertex("O");
-        Vertex b =  graph.addVertex("B");
-        Vertex c = graph.addVertex("A");
-        Vertex d = graph.addVertex("D");
-        Vertex A = graph.addVertex("A");
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex a = graphs.addVertex("O");
+        Vertex b =  graphs.addVertex("B");
+        Vertex c = graphs.addVertex("A");
+        Vertex d = graphs.addVertex("D");
+        Vertex A = graphs.addVertex("A");
 
         Vertex[] trip2 = new Vertex[] {a,c};
 
-        assertEquals("true, $82" , graph.businessTrip(graph,trip2));
+        assertEquals("true, $82" , graphs.businessTrip(graphs,trip2));
 
 
     }
 
     @Test void roundTripTest(){
-        Graph<String> graph = new Graph<String>();
-        Vertex a = graph.addVertex("O");
-        Vertex b =  graph.addVertex("B");
-        Vertex c = graph.addVertex("A");
-        Vertex d = graph.addVertex("D");
-        Vertex A = graph.addVertex("A");
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex a = graphs.addVertex("O");
+        Vertex b =  graphs.addVertex("B");
+        Vertex c = graphs.addVertex("A");
+        Vertex d = graphs.addVertex("D");
+        Vertex A = graphs.addVertex("A");
 
         Vertex[] trip2 = new Vertex[] {a,b,c,d};
 
-        assertEquals("true, $82" , graph.businessTrip(graph,trip2));
+        assertEquals("true, $82" , graphs.businessTrip(graphs,trip2));
+
+
+    }
+
+    @Test void depthFirst(){
+
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex a = graphs.addVertex("O");
+        Vertex b =  graphs.addVertex("B");
+        Vertex c = graphs.addVertex("A");
+        Vertex d = graphs.addVertex("D");
+        Vertex A = graphs.addVertex("A");
+
+        graphs.addEdge(a,b,true);
+        graphs.addEdge(a,c,true);
+        graphs.addEdge(c,d,true);
+        graphs.addEdge(b,d,true);
+        graphs.addEdge(A,d,true);
+
+        List<Vertex<String>> result = new ArrayList<>();
+        result.add(a);
+        result.add(b);
+        result.add(c);
+        result.add(d);
+        result.add(A);
+
+        assertEquals(result , graphs.depthFirst(a));
+        assertNotNull(graphs.depthFirst(a));
 
 
     }

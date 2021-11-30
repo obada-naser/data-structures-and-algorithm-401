@@ -2,10 +2,11 @@ package Graph;
 
 import java.util.*;
 
-public class Graph<T> {
+public class Graphs<T> {
 
     Map<Vertex<T>,   ArrayList<Vertex<T>>> graph=new HashMap();
     public Map<Vertex<T>, List<Vertex<T>>> adjacencyList;
+    List<Vertex<T>> depthList = new ArrayList<>();
 
 
 
@@ -100,13 +101,35 @@ public class Graph<T> {
         return list;
     }
 
-    public String businessTrip(Graph<T> graph, Vertex<T>[] cities) {
+
+
+
+    public List<Vertex<T>> depthFirst(Vertex<T> vertex){
+        this.depthList.add(vertex);
+
+        if (!graph.get(vertex).isEmpty()){
+            for (int i=0;i<graph.get(vertex).size();i++){
+                if(!depthList.contains(graph.get(vertex).get(i))){
+                    depthFirst(graph.get(vertex).get(i));
+                }
+
+            }
+        }
+//        for (int i = 0; i < graph.get(vertex).size(); i++) {
+//            System.out.print(graph.get(vertex).get(i).value+"    ");
+//        }
+
+        return depthList;
+    }
+
+
+    public String businessTrip(Graphs<T> graphs, Vertex<T>[] cities) {
 
         int cost = 0;
         boolean foundCity = false;
 
         for (Vertex<T> v : cities) {
-            if (!graph.getNodes().contains(v)) {
+            if (!graphs.getNodes().contains(v)) {
                 return  "false, $0";
             }
         }
@@ -114,7 +137,7 @@ public class Graph<T> {
         for (int i = 0; i < cities.length - 1; i++) {
             foundCity = false;
 
-            for (Vertex<T> edge : graph.getNeighbors(cities[i])) {
+            for (Vertex<T> edge : graphs.getNeighbors(cities[i])) {
 
                 if (edge.value.equals(cities[i + 1].value)) {
                     cost += edge.weight;

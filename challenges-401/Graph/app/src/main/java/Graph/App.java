@@ -3,10 +3,6 @@
  */
 package Graph;
 
-import org.w3c.dom.Node;
-
-import java.util.Arrays;
-
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -18,25 +14,48 @@ public class App {
 //        Graph<String> graph=new Graph<String>();
 
 
-        Graph<String> graph = new Graph<String>();
-        Vertex a = graph.addVertex("O");
-       Vertex b =  graph.addVertex("B");
-        Vertex c = graph.addVertex("A");
-        Vertex d = graph.addVertex("D");
-        Vertex A = graph.addVertex("A");
+        Graphs<String> graphs = new Graphs<String>();
+        Vertex a = graphs.addVertex("O");
+       Vertex b =  graphs.addVertex("B");
+        Vertex c = graphs.addVertex("A");
+        Vertex d = graphs.addVertex("D");
+        Vertex A = graphs.addVertex("A");
 
-        graph.addEdge(a,b,true);
-        graph.addEdge(a,c,true);
-        graph.addEdge(c,d,true);
-        graph.addEdge(b,d,true);
-        graph.addEdge(A,d,true);
-
-        Graph<String> graph1 = new Graph<String>();
+        graphs.addEdge(a,b,true);
+        graphs.addEdge(a,c,true);
+        graphs.addEdge(c,d,true);
+        graphs.addEdge(b,d,true);
+        graphs.addEdge(A,d,true);
 
 
-        Vertex[] trip2 = new Vertex[] {a,b};
-        Vertex[] trip3 = new Vertex[] {c,d,A};
-        System.out.println(graph1.businessTrip(graph,trip2));
+//        System.out.println(graph.breadthFirst(a));
+
+        Graphs<String> graphs1 = new Graphs<String>();
+
+//
+//        Vertex[] trip2 = new Vertex[] {a,b};
+//        Vertex[] trip3 = new Vertex[] {c,d,A};
+//        System.out.println(graph1.businessTrip(graph,trip2));
+
+//        TreeTest<Integer> treeTest=new TreeTest<Integer>();
+//
+//        treeTest.insert(7);
+//        treeTest.insert(5);
+//        treeTest.insert(15);
+//        treeTest.insert(4);
+//        treeTest.insert(12);
+//
+//        System.out.println( treeTest.toString());
+
+
+        System.out.println("******************** Depth First");
+
+
+
+//        System.out.println(graphs.depthFirst(a));
+        System.out.println(graphs.depthFirst(a));
+
+
 
 
 
@@ -56,7 +75,7 @@ public class App {
 
 //        System.out.println(graph.toString());
 
-        graph.breadthFirst(a);
+//        graph.breadthFirst(a);
 
 
 
