@@ -1,0 +1,78 @@
+package Graph;
+
+import java.util.ArrayList;
+
+
+public class TreeTraverse {
+
+
+    public class BinaryTree<T> {
+
+        Node root;
+
+        ArrayList<T> preOrderList=new ArrayList<>();
+        ArrayList<T> inOrderList=new ArrayList<>();
+        ArrayList<T> postOrderList=new ArrayList<>();
+        public ArrayList preOrder(Node<T> root){
+            if(root!=null){
+                this.preOrderList.add(root.value);
+
+                preOrder(root.left);
+                preOrder(root.right);
+            }
+
+            return this.preOrderList;
+
+
+        }
+
+        public ArrayList inOrder(Node<T> root){
+            if(root!=null){
+                inOrder(root.left);
+                this.inOrderList.add(root.value);
+                inOrder(root.right);
+            }
+
+            return this.inOrderList;
+        }
+        public ArrayList postOrder(Node<T> root){
+
+            if(root !=null){
+                postOrder(root.left);
+                postOrder(root.right);
+
+                this.postOrderList.add(root.value);
+            }
+            return this.postOrderList;
+        }
+
+        public int treeMax(){
+            int max = 0;
+            ArrayList<T> list = preOrder(this.root);
+            for (T num : list) {
+                if ((int) num> max) {
+                    max = (int) num;
+                }
+            }
+            return max;
+
+        }
+
+        public int oddSum(){
+            int sum=0;
+
+            ArrayList<T> list = inOrderList;
+
+            for(T num:list){
+                if((int)num%2 !=0){
+                    sum=sum+(int)num;
+                }
+            }
+            return sum;
+        }
+
+
+
+
+    }
+}
